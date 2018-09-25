@@ -1,5 +1,23 @@
 <!doctype html>
-<html dir="ltr" lang="en-US">
+
+<!--
+
+        ╥ DESIGNED AND DEVELOPED BY...
+        ║ 
+        ║   /       ───
+        ║ ╓──╖ ╓───────╖ ╓╖ ╓───╖ ╓───╖ TM
+        ║ ║  ║ ║       ║ ╙╜ ║   ║ ║   ║  
+    ╓───╫─╫──╜ ╙──╖ ╓──╫──╖ ║   ║ ║   ║
+    ║   ║ ║       ║ ║  ║  ║ ║   ║ ║   ║
+    ║   ║ ╙───────╜ ╙──╜  ║ ╙───╫─╜   ║ 
+    ║   ║ SINCE 20ELEVEN  ║     ║     ╙ LLC © HTTPS://DESAIGN.APP 
+    ╙───╜                 ╙─────╜             ALL RIGHTS RESERVED
+  
+-->
+
+<!--[if IE 8 ]><html class="no-js oldie ie8" lang="en"> <![endif]-->
+<!--[if IE 9 ]><html class="no-js oldie ie9" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--><html class="no-js" dir="ltr" lang="en-US"> <!--<![endif]-->
 
 <!--=============================================-->
 <!--=============================================-->
@@ -7,41 +25,98 @@
 
 <head>
 
-  <!-------------------------------------------
+    <!--:::::::::::::::::::::::::::::::::::::::
   Required meta tags
-  -------------------------------------------->
+::::::::::::::::::::::::::::::::::::::::-->
   
     <meta charset="utf-8">
-    <!--just for auto-refresh in dev use the following meta tag-->
+    <!--just for auto-refresh or redirect use the following meta tag-->
     <!--<meta http-equiv="refresh" content="10" />-->
+    <!--<meta http-equiv="refresh" content="0; url=http://website.com/" />-->
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    
+    <!--mobile specific metas-->
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="author" content="#DESAIGNER" />
+    
+    <!--basic page needs-->
+    <meta name="author" content="#DESAIGNER ¯\_(ツ)_/¯" />
     <meta name="description" content="#"/> 
     <meta name="keywords" content="#"/>
-    <link rel="shortcut icon" type="image/gif" href="assets/images/favicon.gif" />
-  
-  <!-------------------------------------------
+    
+    <!--favicons-->
+    <link rel="shortcut icon" type="image/gif" href="https://raw.githubusercontent.com/kratuvwxyz/assets2/master/images/favicon.gif" />
+    
+      <!--:::::::::::::::::::::::::::::::::::::::
   Stylesheets
-  -------------------------------------------->
+::::::::::::::::::::::::::::::::::::::::-->
+
+    <!--Google Fonts-->
+    <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Serif:400,400i" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    
+    <!--Awesome Fonts Library-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+    <!--++++++-->
+
     <!--Reset CSS-->
-    	<link rel="stylesheet" type="text/css" href="assets/css/reset.css">
-    <!--Other CSS-->
-    	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+      
+    <!--W3.CSS-->
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 		<link rel="stylesheet" type="text/css" href="assets/css/w3.css">
+    
     <!--Developer CSS-->
-		<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    
+    <!--++++++-->
+    
+    <style type="text/css">
+      body {
+          font-family: 'Montserrat', sans-serif;
+          background-image: url('');
+          background-color: whitesmoke;
+          letter-spacing: 1px;
+      }
+      
+      h1,
+      h2,
+      h3,
+      h4,
+      h5,
+      h6 {
+          font-family: 'IBM Plex Serif', serif;
+      }
+      
+      footer {
+          background-image: url(https://raw.githubusercontent.com/kratuvwxyz/assets2/master/images/background/pattern/confectionary.png);
+          background-color: khaki;
+      }
+    
+    </style>
+    
+    <!--++++++-->
   
-  <!-------------------------------------------
+    <!--:::::::::::::::::::::::::::::::::::::::
   JavaScript
-  -------------------------------------------->
-	<!--Font Awesome-->
-		<script defer src="assets/js/fontawesome-all.js"></script>
-  
-  <!-------------------------------------------
+::::::::::::::::::::::::::::::::::::::::-->
+
+    <!--pace automatice page load progess bar-->
+  	<script src="assets/js/pace.min.js"></script>
+  	
+  	<!--modernizr-->
+  	<script src="assets/js/modernize.js"></script>
+
+    <!--jQuery-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    
+    <!--++++++-->
+
+    <!--:::::::::::::::::::::::::::::::::::::::
   Document Title
-  -------------------------------------------->
-  <title>Rock+Paper+Scissors</title>
+::::::::::::::::::::::::::::::::::::::::-->
+
+  <title>Rock Paper Scissors</title>
 
 </head>
 
@@ -51,9 +126,18 @@
 
 <body class="w3-black">
   
-  <!-------------------------------------------
+    <!--[if lt IE 8]>
+        <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+
+    <noscript>
+      You need to enable JavaScript to run this app.
+    </noscript>
+  
+    <!--:::::::::::::::::::::::::::::::::::::::
   Document Wrapper
-  -------------------------------------------->
+::::::::::::::::::::::::::::::::::::::::-->
+
   <header>
 	  <div class="w3-row w3-container w3-black w3-padding-large">
 		  <div class="w3-container w3-left w3-margin-top">
@@ -86,17 +170,89 @@
 	  </div>
 	  
   </section>
+
+
+    <!--:::::::::::::::::::::::::::::::::::::::
+  Footer
+::::::::::::::::::::::::::::::::::::::::-->
+  <br><br><br><br><br><br><br><br><br>
+
+  <section id="footerSection">
+
+      <footer class="w3-container w3-bottom w3-topbar w3-border-dark-gray w3-khaki" id="footerCopyright">
+
+          <!--links-->
+          <div id="footerLinks" class="w3-padding-16">
+              <a href="#" target="_blank"><i class="fa fa-github w3-btn" style="font-size:25px;color: #bd2c00;"></i></a> |
+              <a href="https://linkedin.com/in/desaignstudio" target="_blank"><i class="fa fa-linkedin-square w3-btn" style="font-size:25px;color: #0077b5;"></i></a> |
+              <a href="/" class="w3-text-dark-gray w3-btn">#XXXXX</a>
+              <hr>
+          </div>
+
+          <!--logo-->
+          <div id="logoCopyright" class="w3-row w3-display-container w3-padding-24">
+
+              <img src="https://kratuvwxyz.github.io/assets/images/footer/DESAIGNLLC.svg" alt="desaign llc" height="60" border="none" style="padding-bottom: 5px;" />
+
+              <span class="w3-display-bottom" style="white-space: nowrap; font-size: 12px; line-height: 20px; letter-spacing: 1px; color: #34495e; vertical-align: bottom;">&#160;&copy; 2011-<script type="text/javascript">var d = new Date();document.write(d.getFullYear());</script> <a href="http://desaign.studio" style="color:#e74c3c; text-decoration: underline; vertical-align: bottom;" target="_blank" >DESAIGN.STUDIO</a> All Rights Reseverd.</span>
+
+              <!--plog number-->
+              <div id="plog" class="w3-bottom w3-khaki" style="z-index: 99999"><span class="w3-display-bottomright w3-padding-small w3-margin-right w3-opacity" style="font-size: 10px;">XXXXX</span></div>
+
+          </div>
+          <div id="go-top">
+          <a class="smoothscroll" title="Back to Top" href="#top"><i class="fa fa-long-arrow-up"></i></a>
+          </div>
+
+      </footer>
+
+      <script type="text/javascript">
+          window.onscroll = function() {
+              scrollFunction()
+          };
+
+          function scrollFunction() {
+              if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                  document.getElementById("footerCopyright").style.bottom = "-140px";
+              } else {
+                  document.getElementById("footerCopyright").style.bottom = "0px";
+              }
+          }
+
+          $(".w3-btn").hover(function() {
+              $(this).css("box-shadow", "none");
+          });
+      </script>
+
+  </section>
+
+    <!--:::::::::::::::::::::::::::::::::::::::
+External JavaScripts
+::::::::::::::::::::::::::::::::::::::::-->
+
+  <!--Developer JavaScript -->
   
-  <!-------------------------------------------
-  External JavaScripts
-  -------------------------------------------->
-	<!--Developer JavaScript -->
 		<script src="assets/js/main.js"></script>
 
-</body>
+  </body>
 
-<!--=============================================-->
-<!--=============================================-->
-<!--=============================================-->
-
-</html>
+  <!--==========================================================-->
+  <!--==========================================================-->
+  <!--=============================================================
+  
+          ╥ DESIGNED AND DEVELOPED BY...
+          ║ 
+          ║   /       ───
+          ║ ╓──╖ ╓───────╖ ╓╖ ╓───╖ ╓───╖ TM
+          ║ ║  ║ ║       ║ ╙╜ ║   ║ ║   ║  
+      ╓───╫─╫──╜ ╙──╖ ╓──╫──╖ ║   ║ ║   ║
+      ║   ║ ║       ║ ║  ║  ║ ║   ║ ║   ║
+      ║   ║ ╙───────╜ ╙──╜  ║ ╙───╫─╜   ║ 
+      ║   ║ SINCE 20ELEVEN  ║     ║     ╙ LLC © HTTPS://DESAIGN.APP 
+      ╙───╜                 ╙─────╜             ALL RIGHTS RESERVED
+    
+  ==============================================================-->
+  <!--==========================================================-->
+  <!--==========================================================-->
+  
+  </html>
