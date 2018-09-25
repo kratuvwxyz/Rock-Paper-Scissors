@@ -186,7 +186,6 @@
               <a href="https://github.com/kratuvwxyz/RockPaperScissorsGame" target="_blank"><i class="fa fa-github w3-btn" style="font-size:25px;color: #bd2c00;"></i></a> |
               <a href="https://linkedin.com/in/desaignstudio" target="_blank"><i class="fa fa-linkedin-square w3-btn" style="font-size:25px;color: #0077b5;"></i></a> |
               <a href="index.html" class="w3-text-dark-gray w3-btn">#RockPaperScissors</a>
-              <hr>
           </div>
 
           <!--logo-->
@@ -204,29 +203,47 @@
       </footer>
 
       <script type="text/javascript">
-          window.onscroll = function() {
-              scrollFunction()
-          };
 
-          function scrollFunction() {
-              if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-                  document.getElementById("footerCopyright").style.bottom = "-140px";
-              } else {
-                  document.getElementById("footerCopyright").style.bottom = "0px";
+        $(function(){
+          $('#logoCopyright').hide();
+          if($(document).height() < $(window).height()){
+              $('#logoCopyright').show();
+          }
+          $(window).resize(function(){
+            if($(document).height() > $(window).height()){
+                  $('#logoCopyright').slideUp('slow');
               }
-          }
-
-          var elmnt = document.getElementById('top');
-
-          if (elmnt.clientHeight < 400) {
-            document.getElementById("footerCopyright").style.bottom = "-140px";
-          } else {
-                  document.getElementById("footerCopyright").style.bottom = "0px";
-          }
-
-          $(".w3-btn").hover(function() {
-              $(this).css("box-shadow", "none");
+              else{
+                  $('#logoCopyright').slideDown('slow');
+              }
           });
+      });
+
+      $(window).scroll(function(){        
+          if ($(window).scrollTop() + $(window).height() >= $(document).height() - 0)
+          {
+                  $('#logoCopyright').slideDown('slow');
+          }
+          else
+          {
+                  $('#logoCopyright').slideUp('slow');
+          }
+      });
+
+      $(document).ready(function() {
+          if ($(window).height() >= $(document).height() )
+          {
+              $('#logoCopyright').data('size','hide');
+          }
+          else
+          {
+              $('#logoCopyright').data('size','show');
+          }
+      });
+
+        $(".w3-btn").hover(function() {
+            $(this).css("box-shadow", "none");
+        });
       </script>
 
   </section>
