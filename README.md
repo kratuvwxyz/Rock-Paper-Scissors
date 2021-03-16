@@ -8,8 +8,7 @@ Play Scissors < Rock < Paper < Scissors.
     - Press `R` for **Rock**
     - Press `P` for **Paper**
     - Press `S` for **Scissors**
-- You are playing against Champ (Computer which randomly select in between `R`, `P` or `S`)!
-    - Wins, losses or ties add +1 according to the result.
+- You are playing against Champ (Computer which randomly select in between `R`, `P` and `S`).
 
 ### Version
 
