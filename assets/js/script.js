@@ -15,45 +15,14 @@ $(document.body).on("keyup", function (s) {
     matchGame("s");
   }),
   (matchGame = (s) => {
-    let e = s,
-      t = a[Math.floor(Math.random() * aa.length)];
-    rpsResult(e, t);
+    let a = s,
+      e = aa[Math.floor(Math.random() * aa.length)];
+    rpsResult(a, e);
   }),
-  (rpsResult = (s, e) => {
-    s == e
-      ? tie++
-      : (s == aa[0] && e == aa[2]) ||
-        (s == aa[2] && e == aa[1]) ||
-        (s == aa[1] && e == aa[0])
-      ? win++
-      : loss++,
-      showCase(s, e);
+  (rpsResult = (s, a) => {
+    s == a ? tie++ : (s == aa[0] && a == aa[2]) || (s == aa[2] && a == aa[1]) || (s == aa[1] && a == aa[0]) ? win++ : loss++, showCase(s, a);
   }),
-  (showCase = (s, e) => {
-    let t = `<div class="container"><div class="row py-2"><div class="col"><p>User Choice:</p><img src="assets/images/rps/rock_paper_scissors__2x-0${aa.indexOf(s) + 1}.svg" height="70px" width="70px" border="0" style="top: 0" /><div class="m-2"><button type="button" class="btn btn-warning" disabled>User Score:&#160; <span class="badge bg-danger">${win}</span></button></div></div><div class="col"><p>Champ Choice:</p><img src="assets/images/rps/rock_paper_scissors__2x-0${aa.indexOf(e) + 1}.svg" height="70px" width="70px" border="0" style="top: 0" /><div class="m-2"><button type="button" class="btn btn-warning" disabled>Champ Score:&#160; <span class="badge bg-danger">${loss}</span></button></div></div></div></div>`;
-    $("#game").html(t);
+  (showCase = (s, a) => {
+    let e = `<div class="container"><div class="row py-2"><div class="col"><p>User Choice:</p><img src="assets/images/rps/rock_paper_scissors__2x-0${aa.indexOf(s) + 1}.svg" height="70px" width="70px" border="0" style="top: 0" /><div class="m-2"><button type="button" class="btn btn-warning" disabled>User Score:&#160; <span class="badge bg-danger">${win}</span></button></div></div><div class="col"><p>Champ Choice:</p><img src="assets/images/rps/rock_paper_scissors__2x-0${aa.indexOf(a) + 1}.svg" height="70px" width="70px" border="0" style="top: 0" /><div class="m-2"><button type="button" class="btn btn-warning" disabled>Champ Score:&#160; <span class="badge bg-danger">${loss}</span></button></div></div></div></div>`;
+    $("#game").html(e);
   });
-
-/*  
-        ╥╥  DESIGNED AND DEVELOPED BY...
-        ║║ 
-        ║║ ╓╓──╖╖ ╓╓──── ────╖╖ ╓╖ ╓╓──╖╖ ╓╓──╖╖ TM
-        ║║ ║║  ║║ ║║         ║║ ╙╜ ║║  ║║ ║║  ║║
-    ╓╓──╫╫ ╫╫──╜╜ ╙╙──╖╖ ╓╓──╫╫ ╖╖ ║║  ║║ ║║  ║║
-    ║║  ║║ ║║         ║║ ║║  ║║ ║║ ║║  ║║ ║║  ║║
-    ║║  ║║ ║║         ║║ ║║  ║║ ║║ ║║  ║║ ║║  ║║
-    ║║  ║║ ╙╙──── ────╜╜ ╙╙──╜╜ ║║ ╙╙──╫╫ ╜╜  ║║
-    ║║  ║║  HTTPS://DESAIGN.APP ║║     ║║     ╙╙ LLC
-    ╙╙──╜╜  SINCE TWENTYELEVEN  ╙╙─ ───╜╜
-            Copyright © 2021
-            ALL RIGHTS RESERVED
-            --
-            Call: 1-860-DESAIGN
-            Mail: MEET@DESAIGN.STUDIO
-            Post: PO BOX 200001, AUSTIN TX 78720
-            --
-            Book an appointment with us at
-            https://calendly.com/desaignstudio
-            --
-            Follow us: #desaignstudio
-*/
