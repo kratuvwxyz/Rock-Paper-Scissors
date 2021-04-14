@@ -18,7 +18,7 @@ Play Scissors < Rock < Paper < Scissors. Rock paper scissors is a hand game usua
 ### Version
 
 - **2103161149**
-✔ Last Update @done (March 24th 2021, 14:12)
+✔ Last Update @done (April 14th 2021, 12:23)
 
 ### Framework
 
